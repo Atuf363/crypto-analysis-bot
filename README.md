@@ -1,4 +1,4 @@
-# Crypto Analysis Bot - Dr. Shahid Strategy
+# Crypto Analysis Bot - Dr. Strategy
 
 Multi-timeframe crypto technical analysis bot with web dashboard.
 
@@ -28,3 +28,4 @@ Multi-timeframe crypto technical analysis bot with web dashboard.
 
 ## License
 MIT
+
