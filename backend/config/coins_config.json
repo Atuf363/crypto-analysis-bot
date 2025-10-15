@@ -1,0 +1,46 @@
+{
+  "watchlists": {
+    "tier_a": {
+      "name": "Tier A - Primary",
+      "coins": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "BNBUSDT",
+        "SOLUSDT"
+      ],
+      "scan_interval": 60,
+      "enabled": true
+    },
+    "tier_b": {
+      "name": "Tier B - Secondary",
+      "coins": [
+        "LINKUSDT",
+        "AVAXUSDT",
+        "MATICUSDT",
+        "DOTUSDT",
+        "UNIUSDT",
+        "ATOMUSDT",
+        "APTUSDT",
+        "ARBUSDT"
+      ],
+      "scan_interval": 300,
+      "enabled": true
+    },
+    "tier_c": {
+      "name": "Tier C - Watchlist",
+      "coins": [
+        "RNDRUSDT",
+        "FETUSDT",
+        "INJUSDT",
+        "NEARUSDT",
+        "SEIUSDT"
+      ],
+      "scan_interval": 600,
+      "enabled": false
+    }
+  },
+  "global_settings": {
+    "min_24h_volume_usd": 50000000,
+    "max_concurrent_analysis": 20
+  }
+}
