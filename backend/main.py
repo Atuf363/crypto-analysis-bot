@@ -205,14 +205,8 @@ async def scan_all_coins():
     """Scan all enabled coins periodically"""
     global is_scanning, analysis_cache
     
-    api_key = os.getenv("BINANCE_API_KEY")
-    api_secret = os.getenv("BINANCE_API_SECRET")
-    
-    if not api_key or not api_secret:
-        print("ERROR: Binance API credentials not found")
-        return
-    
-    async with BinanceClient(api_key, api_secret) as client:
+    # Using public Binance API - no credentials needed
+async with BinanceClient("", "") as client:
         while is_scanning:
             try:
                 coins = get_enabled_coins()
@@ -371,3 +365,4 @@ if __name__ == "__main__":
     import uvicorn
     port = int(os.getenv("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
+
