@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 
 # Import our real modules
 from core.binance_client import BinanceClient
-from analysis.indicators import IndicatorCalculator
+from ..analysis.indicators import IndicatorCalculator
 from analysis.structure_detector import StructureDetector, ZoneDetector, ConfluenceAnalyzer
 
 load_dotenv()
