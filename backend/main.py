@@ -2,7 +2,7 @@
 FastAPI Main Application - Crypto Analysis Bot
 Simplified version with mock data for testing
 """
-
+from core.binance_client import BinanceClient
 import asyncio
 import json
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException
@@ -313,3 +313,4 @@ if __name__ == "__main__":
     import uvicorn
     port = int(os.getenv("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
+
