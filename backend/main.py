@@ -15,7 +15,6 @@ def health():
 def get_coins():
     return {"coins": ["BTCUSDT", "ETHUSDT", "SOLUSDT", "BNBUSDT"]}
 
-# Debug route to see all available routes
 @app.get("/api/routes")
 def get_routes():
     routes = []
